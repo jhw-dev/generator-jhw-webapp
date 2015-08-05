@@ -1,0 +1,54 @@
+{
+  "name": "generator-jhw-webapp",
+  "version": "0.0.1",
+  "description": "Yeoman generator that scaffolds out a front-end mobile web app",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhw-dev/generator-jhw-webapp.git"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "web",
+    "app",
+    "mustache",
+    "front-end",
+    "mobile",
+    "h5bp",
+    "modernizr",
+    "zepto",
+    "bower",
+    "babel",
+    "ES6",
+    "grunt",
+    "coffeescript",
+    "jquery"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "generator-jasmine": "^0.2.0",
+    "generator-mocha": "^0.2.0",
+    "mkdirp": "^0.5.1",
+    "underscore.string": "^3.1.1",
+    "wiredep": "^2.2.2",
+    "yeoman-generator": "^0.20.1",
+    "yosay": "^1.0.4"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "mocha": "*",
+    "yeoman-assert": "^2.0.0"
+  },
+  "author": "zerob13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhw-dev/generator-jhw-webapp/issues"
+  },
+  "homepage": "https://github.com/jhw-dev/generator-jhw-webapp#readme"
+}

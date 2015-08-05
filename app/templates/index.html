@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" <% if (includeCache) { %>manifest="cache.manifest" <% } %>>
+  <head>
+    <meta charset="utf-8">
+    <title><%= appname %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <% if (includeCache) { %>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <% } %>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild --><% if (includeModernizr) { %>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <% } %>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>基本控件</header>
+    <section>
+      <ul>
+        <li class="clear">
+          <div class="tt">搜索框</div>
+          <div class="show">
+            <div class="gt-input-wrapper">
+              <form class="gt-search-form">
+                <input id="search-demo" class="gt-input search-box" type="search" required placeholder='请输入关键词'>
+                <div href="javascript:;" class="close-icon"></div>
+                <input type="submit" value="搜索" class="search-btn"></input>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">蓝色按钮</div>
+          <div class="show">
+            <button class="gt-btn gt-btn-blue">添&nbsp;加</button>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">灰色按钮</div>
+          <div class="show">
+            <button class="gt-btn gt-btn-gray">打&nbsp;开</a>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">多框表单</div>
+          <div class="show">
+            <form class="gt-multiInput">
+              <div class="gt-input-content">
+                <input id="key-demo" class="gt-input" type="text">
+                <label class="float-label" for="key-demo">账号</label>
+              </div>
+              <div class="gt-input-content">
+                <input id="pwd-demo" class="gt-input" type="password">
+                <label class="float-label" for="pwd-demo">密码</label>
+              </div>
+              <div class="gt-input-content">
+                <input id="qrcode-demo" class="gt-input gt-input-qr" type="text">
+                <label class="float-label" for="qrcode-demo">验证码</label>
+                <button class="gt-qcode">获取验证码</button>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">完成态</div>
+          <div class="show">
+            <div class="gt-done"></div>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">完成态2</div>
+          <div class="show">
+            <div class="gt-done empty"></div>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="tt">进行态</div>
+          <div class="show">
+            <div class="gt-loading">
+              <div class="spinner">
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+                <i class="blade"></i>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+     </body>
+</html>

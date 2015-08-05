@@ -1,0 +1,59 @@
+@import "reset";
+
+header {
+  background-color: #00bcd4;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size:20px;
+}
+
+section {
+  width: 100%;
+  display: block;
+  background: #f1f1f1;
+  color: #444;
+  ul {
+    counter-reset: sectioncounter;
+  }
+}
+
+li.clear {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 46px;
+  &:before {
+    display: block;
+    content: counter(sectioncounter);
+    counter-increment: sectioncounter;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background: #888;
+  }
+  .tt {
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 25px;
+  }
+  .show {
+    display: block;
+    width:80%;
+    align-self: center;
+    margin-right:5px;
+  }
+}
+@import 'widgets/input';
+@import 'widgets/button';
+@import 'widgets/icons';
+@import 'widgets/spinner';
+
