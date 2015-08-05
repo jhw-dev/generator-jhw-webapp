@@ -165,7 +165,8 @@ module.exports = generators.Base.extend({
 
       this.fs.copyTpl(
         this.templatePath(stylesheet),
-        this.destinationPath('app/styles/' + stylesheet))
+        this.destinationPath('app/styles/' + stylesheet));
+      this.fs.copy(this.templatePath('scss'),this.destinationPath('app/styles/'));
     },
 
     html: function() {
