@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       babel: {
         files: ['<%%= config.app %>/scripts/{,*/}*.js'],
         tasks: ['babel:dist']
-      }
+      },
       <% } else {%>
       js: {
         files: ['<%%= config.app %>/scripts/{,*/}*.js'],
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
           server: '<%%= config.dist %>'
         }
       }
-    }
+    },
     // Empties folders to start fresh
     clean: {
       dist: {
