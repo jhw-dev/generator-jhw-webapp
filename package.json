@@ -53,6 +53,6 @@
   "engines": {
     "node": ">=0.11.0",
     "npm": ">=2.7.0"
-  }
+  },
   "homepage": "https://github.com/jhw-dev/generator-jhw-webapp#readme"
 }
