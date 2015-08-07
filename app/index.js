@@ -65,7 +65,12 @@ module.exports = generators.Base.extend({
         name: 'Use Babel',
         value: 'includeBabel',
         checked: true
-      }]
+      }, {
+        name: 'Use Imagemin',
+        value: 'includeImagemin',
+        checked: false
+      }
+      ]
     }];
 
     this.prompt(prompts, function(answers) {
@@ -80,6 +85,7 @@ module.exports = generators.Base.extend({
       this.includeCache = hasFeature('includeCache');
       this.includeMustache = hasFeature('includeMustache');
       this.includeBabel = hasFeature('includeBabel');
+      this.includeImagemin= hasFeature('includeImagemin');
 
       done();
     }.bind(this));
@@ -95,6 +101,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
+          includeImagemin: this.includeImagemin,
           useBabel: this.includeBabel
         }
       );
@@ -108,6 +115,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
+          includeImagemin: this.includeImagemin,
           useBabel: this.includeBabel
         }
       )
@@ -183,6 +191,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
+          includeImagemin: this.includeImagemin,
           useBabel: this.includeBabel
         }
       );

@@ -226,6 +226,7 @@ module.exports = function(grunt) {
     },
 
     // The following *-min tasks produce minified files in the dist folder
+    <% if (includeImagemin) { %>
     imagemin: {
       dist: {
         files: [{
@@ -247,6 +248,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+    <% } %>
 
     htmlmin: {
       dist: {
@@ -382,9 +384,11 @@ module.exports = function(grunt) {
         <% if (useBabel) { %>
         'babel', <% } %>
         'sass',
-        'copy:styles',
+        <% if (includeImagemin) { %>
         'imagemin',
-        'svgmin'
+        'svgmin',
+        <% } %>
+        'copy:styles'
       ]
     }
   });
