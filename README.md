@@ -22,4 +22,4 @@ $ yo jhw-webapp
 ```
 
 ## License    
-[![License](https://img.shields.io/npm/l/generator-jhw-webapp.svg?style=flat)](https://github.com/zerob13/generator-jhw-webapp)
+[![License](https://img.shields.io/npm/l/generator-jhw-webapp.svg?style=flat)](https://github.com/jhw-dev/generator-jhw-webapp)
