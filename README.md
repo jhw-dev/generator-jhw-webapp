@@ -1,5 +1,6 @@
 # generator-jhw-webapp
-Yeoman generator that scaffolds out a front-end mobile web app 
+Yeoman generator that scaffolds out a front-end mobile web app    
+
 [![NPM version](https://img.shields.io/npm/v/generator-jhw-webapp.svg?style=flat)](https://www.npmjs.com/package/generator-jhw-webapp)
 [![Node version](https://img.shields.io/node/v/generator-jhw-webapp.svg?style=flat)](https://www.npmjs.com/package/generator-jhw-webapp)
 [![NPM Downloads](https://img.shields.io/npm/dm/generator-jhw-webapp.svg)](https://www.npmjs.com/package/generator-jhw-webapp)
