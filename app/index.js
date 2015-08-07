@@ -21,11 +21,11 @@ module.exports = generators.Base.extend({
       type: Boolean
     });
 
-    this.option('babel', {
-      desc: 'Use Babel',
-      type: Boolean,
-      defaults: true
-    });
+    // this.option('babel', {
+    //   desc: 'Use Babel',
+    //   type: Boolean,
+    //   defaults: true
+    // });
 
   },
 
@@ -61,6 +61,10 @@ module.exports = generators.Base.extend({
         value: 'includeMustache',
         checked: false
 
+      }, {
+        name: 'Use Babel',
+        value: 'includeBabel',
+        checked: true
       }]
     }];
 
@@ -75,6 +79,7 @@ module.exports = generators.Base.extend({
       this.includeJQuery = hasFeature('includeJQuery');
       this.includeCache = hasFeature('includeCache');
       this.includeMustache = hasFeature('includeMustache');
+      this.includeBabel = hasFeature('includeBabel');
 
       done();
     }.bind(this));
@@ -90,7 +95,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
-          useBabel: this.options['babel']
+          useBabel: this.includeBabel
         }
       );
     },
@@ -103,7 +108,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
-          useBabel: this.options['babel']
+          useBabel: this.includeBabel
         }
       )
     },
@@ -166,7 +171,7 @@ module.exports = generators.Base.extend({
       this.fs.copyTpl(
         this.templatePath(stylesheet),
         this.destinationPath('app/styles/' + stylesheet));
-      this.fs.copy(this.templatePath('scss'),this.destinationPath('app/styles/'));
+      this.fs.copy(this.templatePath('scss'), this.destinationPath('app/styles/'));
     },
 
     html: function() {
@@ -178,7 +183,7 @@ module.exports = generators.Base.extend({
           includeJQuery: this.includeJQuery,
           includeCache: this.includeCache,
           includeMustache: this.includeMustache,
-          useBabel: this.options['babel']
+          useBabel: this.includeBabel
         }
       );
     },
@@ -190,8 +195,8 @@ module.exports = generators.Base.extend({
       );
 
       // this.fs.copy(
-        // this.templatePath('apple-touch-icon.png'),
-        // this.destinationPath('app/apple-touch-icon.png')
+      // this.templatePath('apple-touch-icon.png'),
+      // this.destinationPath('app/apple-touch-icon.png')
       // );
     },
 
