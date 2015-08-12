@@ -311,7 +311,11 @@ module.exports = function(grunt) {
             'template/*.mst',
             <% } %>
             '*.{ico,png,txt}',
+            <% if (includeImagemin) { %>
             'images/{,*/}*.webp',
+            <% } else { %>
+            'images/{,*/}*.*',
+            <% } %>
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
