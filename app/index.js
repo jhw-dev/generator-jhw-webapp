@@ -68,9 +68,8 @@ module.exports = generators.Base.extend({
       }, {
         name: 'Use Imagemin',
         value: 'includeImagemin',
-        checked: false
-      }
-      ]
+        checked: true
+      }]
     }];
 
     this.prompt(prompts, function(answers) {
@@ -85,7 +84,7 @@ module.exports = generators.Base.extend({
       this.includeCache = hasFeature('includeCache');
       this.includeMustache = hasFeature('includeMustache');
       this.includeBabel = hasFeature('includeBabel');
-      this.includeImagemin= hasFeature('includeImagemin');
+      this.includeImagemin = hasFeature('includeImagemin');
 
       done();
     }.bind(this));

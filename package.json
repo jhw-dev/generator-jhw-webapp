@@ -1,6 +1,6 @@
 {
   "name": "generator-jhw-webapp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yeoman generator that scaffolds out a front-end mobile web app",
   "main": "app/index.js",
   "scripts": {
